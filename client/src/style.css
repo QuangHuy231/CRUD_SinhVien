@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+.user {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid red;
+}
+
+.btn-addUser {
+  text-decoration: none;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: teal;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
