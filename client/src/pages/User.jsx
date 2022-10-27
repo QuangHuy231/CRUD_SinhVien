@@ -21,6 +21,15 @@ const User = () => {
 
     fetch();
   }, []);
+
+  const handleDelete = async (userId) => {
+    try {
+      await axios.delete("http://localhost:8800/delete-user/" + userId);
+      window.location.reload();
+    } catch (err) {
+      console.log(err);
+    }
+  };
   return (
     <div>
       <h1>Danh sách Sinh Viên</h1>
@@ -31,6 +40,16 @@ const User = () => {
           <h2>{user.lastName}</h2>
           <h3>{user.lop}</h3>
           <h3>{user.gioitinh}</h3>
+
+          <button
+            className="delete"
+            onClick={() => {
+              handleDelete(user.id);
+            }}
+          >
+            Delete
+          </button>
+          <button>Update</button>
         </div>
       ))}
 
