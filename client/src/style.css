@@ -41,3 +41,13 @@ input {
   font-weight: bold;
   cursor: pointer;
 }
+
+.delete {
+  background-color: red;
+}
+
+.update {
+  background-color: aqua;
+  color: black;
+  text-decoration: none;
+}

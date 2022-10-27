@@ -42,14 +42,16 @@ const User = () => {
           <h3>{user.gioitinh}</h3>
 
           <button
-            className="delete"
+            className="formButton delete"
             onClick={() => {
               handleDelete(user.id);
             }}
           >
             Delete
           </button>
-          <button>Update</button>
+          <Link to={`/update-user/${user.id}`} className="formButton update">
+            Update
+          </Link>
         </div>
       ))}
 
