@@ -49,7 +49,11 @@ const User = () => {
           >
             Delete
           </button>
-          <Link to={`/update-user/${user.id}`} className="formButton update">
+          <Link
+            to={`/update-user/${user.id}`}
+            className="formButton update"
+            state={user}
+          >
             Update
           </Link>
         </div>
